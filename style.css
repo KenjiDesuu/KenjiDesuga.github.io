@@ -68,8 +68,17 @@ section p {
     font-size: 20px;  
 }
 
-.design {
-        
+
+@media screen and (max-width: 600px) {
+    .design {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .design {
+        display: none;
+    }
 }
 
 .design:hover {
@@ -78,8 +87,16 @@ section p {
     color: #fff;
 }
 
-.design1 {
-    
+@media screen and (max-width: 600px) {
+    .design1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .design1 {
+        display: none;
+    }
 }
 
 .design1:hover {
