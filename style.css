@@ -6,11 +6,13 @@
         text-decoration: none;
  }
 
-
+strong {
+    text-shadow: 0 0 20px #fff;
+}
 
  /*home contents*/
 
-header {
+.head1 {
     margin: 0;
     background-image: url("MicrosoftTeams-image.png");
     background-size: cover;
@@ -20,7 +22,9 @@ header {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) inset;
 }
 
-header::before {
+
+
+.head1::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -204,13 +208,44 @@ li.dropdown {
 
 
 
-/*student side*/
+/*1st slide*/
 
-.kape {
+.bodystud {
+    background: linear-gradient(
+        rgba(214, 127, 46, 0.747), rgb(214, 127, 46), rgb(117, 63, 12) 
+    );
+}
+
+.bodystud1 {
+    background-image: url("ending.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.head2 {
+    background-image: url("kape.png");
+    height: 600px;
     width: 600px; 
     float: left;
-    padding: 50px 30px 20px;
+    margin: 50px 30px 20px;
     border-radius: 30px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+.head6 {
+    background-image: url("puke.png");
+    height: 500px;
+    width: 600px; 
+    float: left;
+    margin: 50px 30px 20px;
+    border-radius: 30px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
 }
 
 .wrapper {
@@ -220,6 +255,7 @@ li.dropdown {
 .description {
     width: 100%;
     padding-right: 30px;
+    color: #fff;
 }
 
 .description h1 {
@@ -230,14 +266,43 @@ li.dropdown {
 }
 
 .description a {
+    padding: 20px 30px 20px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.description1 {
+    width: 100%;
+    padding-right: 30px;
+    color: #fff;
+}
+
+.description1 h1 {
     padding: 50px 30px 20px;
+    line-height: 44px;
+    font-size: 50px;
+    text-shadow: 0 0 20px #fff;
+}
+
+.description1 a {
+    padding: 20px 30px 20px;
     line-height: 24px;
     font-size: 20px;
 }
 
 @media screen and (max-width: 1100px) {
     
-    .kape {
+    .head2 {
+        width: 600px; 
+        float: none;
+        padding: 50px 30px 20px;
+        border-radius: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .head6 {
         width: 600px; 
         float: none;
         padding: 50px 30px 20px;
@@ -250,30 +315,290 @@ li.dropdown {
     .description {
         width: 100%;
         padding-right: 30px;
+        padding-left: 30px;
         text-align: center;
     }  
 }
 
 @media screen and (max-width: 600px) {
     
-    .kape {
+    .head2 {
         width: 100%; 
         float: none;
         padding: 0px 0px 0px;
         display: block;
         border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) inset;
+    }
+
+    .head6 {
+        width: 100%; 
+        float: none;
+        padding: 0px 0px 0px;
+        display: block;
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) inset;
     }
 
     .description {
         width: 100%;
         padding-right: 30px;
+        padding-left: 30px; 
+        padding-bottom: 30px;     
         text-align: center;
+        background: linear-gradient(
+        rgb(214, 127, 46), rgb(117, 63, 12) 
+        );
+    }  
+
+    .head2::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            0deg, rgb(214, 127, 46), rgba(117, 63, 12, 0) 20%
+        );
+    }
+
+    .head6::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            0deg, rgb(214, 127, 46), rgba(117, 63, 12, 0) 20%
+        );
+    }
+
+}
+
+.button {
+    border-radius: 50px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgba(214, 127, 46, 0.747);
+    color: rgba(255, 255, 255, 0.726); 
+    border: 2px solid rgb(214, 127, 46);
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    color: white;
+    text-shadow: 0 0 20px #fff;
+    scale: 1.3;
+}
+
+/*2nd slide*/
+
+.head3 {
+    background-image: url("tite.png");
+    height: 450px;
+    width: 650px; 
+    float: none;
+    margin: 50px 30px 20px;
+    border-radius: 30px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head4 {
+    background-image: url("prvroom.png");
+    height: 450px;
+    width: 650px; 
+    float: none;
+    margin: 50px 30px 20px;
+    border-radius: 30px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head5 {
+    background-image: url("wews.png");
+    height: 450px;
+    width: 650px; 
+    float: none;
+    margin: 50px 30px 20px;
+    border-radius: 30px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description1 {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px; 
+    padding-bottom: 30px;     
+    text-align: center;
+}
+
+.description2 {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px; 
+    padding-bottom: 30px;     
+    text-align: center;
+    transform: translateY(625px);
+}
+
+@media screen and (max-width: 600px) {
+    
+    .description2 {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px; 
+        padding-bottom: 30px;     
+        text-align: center;
+        transform: translateY(500px);
+    }
+
+    .head3 {
+        width: 100%; 
+        float: none;
+        padding: 0px 0px 0px;
+        display: block;
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) inset;
+    }
+
+    .head3::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            0deg, rgb(214, 127, 46), rgba(117, 63, 12, 0) 20%
+        );
+    }
+
+    .head4 {
+        
+        width: 100%; 
+        float: none;
+        padding: 0px 0px 0px;
+        display: block;
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 70px 50px rgb(214, 127, 46) inset;
+    }
+
+    .head4::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            0deg, rgb(214, 127, 46), rgba(117, 63, 12, 0) 20%
+        );
+
+    
+    }
+
+    .head5 {
+        width: 100%; 
+        float: none;
+        padding: 0px 0px 0px;
+        display: block;
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 70px 50px rgb(214, 127, 46) inset;
+    }
+
+    .head5::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            0deg, rgb(214, 127, 46), rgba(117, 63, 12, 0) 20%
+    );
+
+    
+    }
+
+    .description1 {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px; 
+        padding-bottom: 30px;     
+        text-align: center;
+        background: linear-gradient(
+        rgb(214, 127, 46), rgb(117, 63, 12) 
+        );
     }  
 }
 
+.buttonend {
+    border-radius: 50px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgba(214, 127, 46, 0.747);
+    color: rgba(255, 255, 255, 0.726); 
+    border: 2px solid rgb(214, 127, 46);
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
 
-
-
+.buttonend:hover {
+    color: white;
+    text-shadow: 0 0 20px #fff;
+    scale: 1.3;
+}
 
 
 
